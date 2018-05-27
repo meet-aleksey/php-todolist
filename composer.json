@@ -1,0 +1,99 @@
+{
+    "name": "meet-aleksey/php-todolist",
+    "description": "Test project.",
+    "keywords": ["test", "todo list", "todo", "test project"],
+    "license": "MIT",
+    "type": "project",
+    "authors": [{
+        "name": "Meet Aleksey",
+        "homepage": "https://github.com/meet-aleksey"
+    }],
+    "repositories": [{
+        "type": "package",
+        "package": {
+            "name": "boomyjee/teacss",
+            "version": "1.0.0",
+            "source": {
+              "url": "https://github.com/boomyjee/teacss",
+              "type": "git",
+              "reference": "master"
+            }
+          }
+    },
+    {
+        "type": "package",
+        "package": {
+            "name": "janpaepke/ScrollMagic",
+            "version": "2.0.5",
+            "source": {
+              "url": "https://github.com/janpaepke/ScrollMagic",
+              "type": "git",
+              "reference": "master"
+            }
+          }
+    },
+    {
+        "type": "package",
+        "package": {
+            "name": "greensock/GreenSock-JS",
+            "version": "1.20.4",
+            "source": {
+              "url": "https://github.com/greensock/GreenSock-JS",
+              "type": "git",
+              "reference": "master"
+            }
+          }
+    },
+    {
+        "type": "package",
+        "package": {
+            "name": "twitter/typeahead.js",
+            "version": "0.11.1",
+            "source": {
+              "url": "https://github.com/twitter/typeahead.js",
+              "type": "git",
+              "reference": "master"
+            }
+          }
+    },
+    {
+        "type": "package",
+        "package": {
+            "name": "sliptree/bootstrap-tokenfield",
+            "version": "0.12.1",
+            "source": {
+              "url": "https://github.com/sliptree/bootstrap-tokenfield",
+              "type": "git",
+              "reference": "master"
+            }
+          }
+    },
+    {
+        "type": "package",
+        "package": {
+            "name": "blueimp/jQuery-File-Upload",
+            "version": "9.21.0",
+            "source": {
+              "url": "https://github.com/blueimp/jQuery-File-Upload",
+              "type": "git",
+              "reference": "master"
+            }
+          }
+    }],
+    "require": {
+        "php": ">=7.0",
+        "doctrine/orm": "2.6.1",
+        "components/jquery": "1.12.4",
+        "twbs/bootstrap": "3.3.7",
+        "boomyjee/teacss": "*",
+        "janpaepke/ScrollMagic": "*",
+        "greensock/GreenSock-JS": "*",
+        "twitter/typeahead.js": "*",
+        "sliptree/bootstrap-tokenfield": "*",
+        "blueimp/jQuery-File-Upload": "*",
+        "php-mvc-project/php-mvc": "^1.0"
+    },
+    "autoload": {
+        "psr-0": {"": "models/"}
+    }
+}
