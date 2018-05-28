@@ -26,6 +26,8 @@ class TasksController extends Controller {
     public function __construct() {
         Filter::add('AccessFilter');
 
+        Model::use('edit', 'edit');
+
         Model::required('edit', array('task', 'title'));
         Model::required('edit', array('task', 'text'));
 
@@ -34,6 +36,7 @@ class TasksController extends Controller {
         Model::display('edit', 'groupId', 'Group', 'The group to which the task belongs.');
         Model::display('edit', 'tags', 'Tags', 'Comma separated list of tags');
 
+        Model::use('show', 'show');
         Model::display('show', array('text'), 'Comment');
 
         ValidateAntiForgeryToken::disable('upload');

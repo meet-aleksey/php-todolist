@@ -12,11 +12,15 @@ class AccountController extends Controller {
         Filter::add('join', 'UserFilter');
         Filter::add('profile', 'AccessFilter');
 
+        Model::use('login', 'login');
+
         Model::required('login', 'username');
         Model::required('login', 'password');
 
         Model::display('login', 'username', 'Username or Email', 'The username or email that you used when registering on the site.');
         Model::display('login', 'password', 'Password', 'The password you used when registering on the site.');
+
+        Model::use('join', 'join');
 
         Model::required('join', 'username');
         Model::required('join', 'email');
@@ -32,6 +36,8 @@ class AccountController extends Controller {
         Model::validation('join', 'email', function($value) {
             return filter_var($value, \FILTER_VALIDATE_EMAIL);
         });
+
+        Model::use('profile', 'profile');
 
         Model::required('profile', 'username');
         Model::required('profile', 'email');

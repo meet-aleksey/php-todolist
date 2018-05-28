@@ -91,7 +91,7 @@
         "twitter/typeahead.js": "*",
         "sliptree/bootstrap-tokenfield": "*",
         "blueimp/jQuery-File-Upload": "*",
-        "php-mvc-project/php-mvc": "^1.0"
+        "php-mvc-project/php-mvc": "^1.1"
     },
     "autoload": {
         "psr-0": {"": "models/"}

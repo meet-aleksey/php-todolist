@@ -16,6 +16,7 @@ class GroupsController extends Controller {
     public function __construct() {
         Filter::add('AccessFilter');
 
+        Model::use('edit', 'edit');
         Model::required('edit', 'name');
         Model::display('edit', 'name', 'Group name', 'Convenient for you the name of the group.');
         Model::display('edit', 'comment', 'Comment', 'Comment to group.');

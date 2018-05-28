@@ -1,7 +1,7 @@
 # TODO List
 
 [![PHP](https://img.shields.io/badge/PHP-%3E%3D7.0-blue.svg?style=flat)](http://php.net)
-[![PHP MVC](https://img.shields.io/badge/PHP%20MVC-1.0-blue.svg?style=flat)](https://github.com/php-mvc-project/php-mvc)
+[![PHP MVC](https://img.shields.io/badge/PHP%20MVC-1.1-blue.svg?style=flat)](https://github.com/php-mvc-project/php-mvc)
 [![License](https://img.shields.io/github/license/meet-aleksey/php-todolist.svg?style=flat)](LICENSE)
 
 This is a test project that implements a simple TODO list.

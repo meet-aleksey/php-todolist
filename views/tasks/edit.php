@@ -25,7 +25,6 @@ View::setTitle($model->task->id > 0 ? 'Edit task "' . $model->task->title . '"' 
             array('task', 'title'),
             null,
             array(
-                'required' => 'required', 
                 'class' => 'form-control',
                 'maxlength' => 100
             )
@@ -54,7 +53,6 @@ View::setTitle($model->task->id > 0 ? 'Edit task "' . $model->task->title . '"' 
             10,
             null,
             array(
-                'required' => 'required', 
                 'class' => 'form-control',
             )
         )?>
